@@ -1,0 +1,235 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" />
+<html xmlns="http://www.w3.org/1999/xhtml" />
+<html>
+ <head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta name="Author" content="Van Khuong" />
+  <title>Demo | Xây dựng plugin slide-door với jQuery</title>
+  <link rel="stylesheet" type="text/css" href="../styles.css" />
+  <link href="vk-slidedoor.css" rel="stylesheet" type="text/css"/>
+  <script type="text/javascript" src="../html5.js"></script>
+  <script type="text/javascript" src="jquery.min.js"></script>
+  <script type="text/javascript" src="jquery.easing.1.3.js"></script>
+  <script type="text/javascript" src="vk-slidedoor.js"></script>
+    <!--[if IE 9]>
+        <link rel="stylesheet" type="text/css" href="ie9.css" />
+    <![endif]-->
+    <!--[if lt IE 9]>
+        <link rel="stylesheet" type="text/css" href="ie8.css" />
+    <![endif]-->
+    <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="ie7.css" />
+    <![endif]-->
+<script type="text/javascript">
+	//Google Analytics
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-30316415-1']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+</script>
+<style type="text/css">
+	body{background: url('../images/bg.jpg')}
+	.credits a:hover, .footer a:hover{color: #fff;}
+	.footer, .credits{border: none;}
+	h1{color: #999;}
+</style>
+
+<script type="text/javascript">
+$(document).ready(function(){
+    /**
+    * Do not remove this if you are using
+    * jQuery vkSlidedoor
+    * Author: Van Khuong
+    * http://sothichweb.com
+    */
+    $('.vk-slidedoor').vkSlidedoor({autoplay : true, direction : 'ltr', looptimeout : 5000});
+});
+</script>
+ </head>
+<body>
+<header>
+	<h1 class="title">Demo | Xây dựng plugin slide-door với jQuery</h1>
+	<p class="credits"><em>by:</em> <a href="http://www.sothichweb.com/">sothichweb.com</a></p>
+</header>
+<article>
+<div class="vk-slidedoor" id="vk1">
+        <div class="slidedoor-wrap">
+            <dl>
+                <dt>弁当＆セット</dt>
+                <dd><img src="images/featured-cagory1.jpg" /><div class="detail">更に詳しく</div></dd>
+            </dl>
+            <dl>
+                <dt>ご飯・麺類</dt>
+                <dd><img src="images/featured-cagory2.jpg" /><div class="detail">更に詳しく</div></dd>
+            </dl>
+            <dl>
+                <dt>寿司・刺身盛り合わせ</dt>
+                <dd><img src="images/featured-cagory3.png" /><div class="detail">更に詳しく</div></dd>
+            </dl>
+            <dl>
+                <dt>刺身</dt>
+                <dd><img src="images/featured-cagory4.jpg" /><div class="detail">更に詳しく</div></dd>
+            </dl>
+            <dl class="current">
+                <dt>あぶり寿司・にぎり寿司</dt>
+                <dd><img src="images/featured-cagory5.png" /><div class="detail">更に詳しく</div></dd>
+            </dl>
+            <dl>
+                <dt>軍艦寿司</dt>
+                <dd><img src="images/featured-cagory6.jpg" /><div class="detail">更に詳しく</div></dd>
+            </dl>
+            <dl>
+                <dt>巻き寿司・変り寿司・押し寿司</dt>
+                <dd><img src="images/featured-cagory7.jpg" /><div class="detail">更に詳しく</div></dd>
+            </dl>
+            <dl>
+                <dt>手巻き寿司</dt>
+                <dd><img src="images/featured-cagory8.jpg" /><div class="detail">更に詳しく</div></dd>
+            </dl>
+            <dl>
+                <dt>ベジタリアン</dt>
+                <dd><img src="images/featured-cagory9.jpg" /><div class="detail">更に詳しく</div></dd>
+            </dl>
+            <dl>
+                <dt>酒の肴</dt>
+                <dd><img src="images/featured-cagory10.jpg" /><div class="detail">更に詳しく</div></dd>
+            </dl>
+            <dl>
+                <dt>焼物・煮物</dt>
+                <dd><img src="images/featured-cagory11.jpg" /><div class="detail">更に詳しく</div></dd>
+            </dl>
+            <dl>
+                <dt>天ぷら揚げ物</dt>
+                <dd><img src="images/featured-cagory12.jpg" /><div class="detail">更に詳しく</div></dd>
+            </dl>
+            <dl>
+                <dt>鍋もの</dt>
+                <dd><img src="images/featured-cagory13.jpg" /><div class="detail">更に詳しく</div></dd>
+            </dl>
+        </div>
+    </div>
+    
+    <div class="vk-slidedoor en-US">
+        <div class="slidedoor-wrap">
+            <dl>
+                <dt><span>Bento & Set</span></dt>
+                <dd><img src="images/featured-cagory1.jpg" /><div class="detail">Details</div></dd>
+            </dl>
+            <dl>
+                <dt><span>Rice & Noodle</span></dt>
+                <dd><img src="images/featured-cagory2.jpg" /><div class="detail">Details</div></dd>
+            </dl>
+            <dl>
+                <dt><span>Assortment</span></dt>
+                <dd><img src="images/featured-cagory3.png" /><div class="detail">Details</div></dd>
+            </dl>
+            <dl>
+                <dt><span>Sashimi</span></dt>
+                <dd><img src="images/featured-cagory4.jpg" /><div class="detail">Details</div></dd>
+            </dl>
+            <dl>
+                <dt><span>Sushi A La Carte</span></dt>
+                <dd><img src="images/featured-cagory5.png" /><div class="detail">Details</div></dd>
+            </dl>
+            <dl>
+                <dt><span>Sushi A La Carte</span></dt>
+                <dd><img src="images/featured-cagory6.jpg" /><div class="detail">Details</div></dd>
+            </dl>
+            <dl>
+                <dt><span>Gunkan Sushi</span></dt>
+                <dd><img src="images/featured-cagory7.jpg" /><div class="detail">Details</div></dd>
+            </dl>
+            <dl class="current">
+                <dt><span>Sushi Roll</span></dt>
+                <dd><img src="images/featured-cagory8.jpg" /><div class="detail">Details</div></dd>
+            </dl>
+            <dl>
+                <dt><span>The Sushi Bar Original</span></dt>
+                <dd><img src="images/featured-cagory9.jpg" /><div class="detail">Details</div></dd>
+            </dl>
+            <dl>
+                <dt><span>Hand Roll Sushi</span></dt>
+                <dd><img src="images/featured-cagory10.jpg" /><div class="detail">Details</div></dd>
+            </dl>
+            <dl>
+                <dt><span>Vegetarian</span></dt>
+                <dd><img src="images/featured-cagory11.jpg" /><div class="detail">Details</div></dd>
+            </dl>
+            <dl>
+                <dt><span>Appetizer</span></dt>
+                <dd><img src="images/featured-cagory12.jpg" /><div class="detail">Details</div></dd>
+            </dl>
+            <dl>
+                <dt><span>Grilled/Simmered Dish</span></dt>
+                <dd><img src="images/featured-cagory13.jpg" /><div class="detail">Details</div></dd>
+            </dl>
+        </div>
+    </div>
+    
+    <div class="vk-slidedoor vi">
+        <div class="slidedoor-wrap">
+            <dl class="current">
+                <dt><span>Cơm Hộp</span></dt>
+                <dd><img src="images/featured-cagory1.jpg" /><div class="detail">Chi tiết</div></dd>
+            </dl>
+            <dl>
+                <dt><span>Cơm/ Mì</span></dt>
+                <dd><img src="images/featured-cagory2.jpg" /><div class="detail">Chi tiết</div></dd>
+            </dl>
+            <dl>
+                <dt><span>Thập Cẩm</span></dt>
+                <dd><img src="images/featured-cagory3.png" /><div class="detail">Chi tiết</div></dd>
+            </dl>
+            <dl>
+                <dt><span>Sashimi</span></dt>
+                <dd><img src="images/featured-cagory4.jpg" /><div class="detail">Chi tiết</div></dd>
+            </dl>
+            <dl>
+                <dt><span>Sushi Cơm Nắn</span></dt>
+                <dd><img src="images/featured-cagory5.png" /><div class="detail">Chi tiết</div></dd>
+            </dl>
+            <dl>
+                <dt><span>Lẩu</span></dt>
+                <dd><img src="images/featured-cagory6.jpg" /><div class="detail">Chi tiết</div></dd>
+            </dl>
+            <dl>
+                <dt><span>Cơm Cuộn Rong Biển</span></dt>
+                <dd><img src="images/featured-cagory7.jpg" /><div class="detail">Chi tiết</div></dd>
+            </dl>
+            <dl>
+                <dt><span>Sushi Cuộn</span></dt>
+                <dd><img src="images/featured-cagory8.jpg" /><div class="detail">Chi tiết</div></dd>
+            </dl>
+            <dl>
+                <dt><span>Cuộn Truyền Thống</span></dt>
+                <dd><img src="images/featured-cagory9.jpg" /><div class="detail">Chi tiết</div></dd>
+            </dl>
+            <dl>
+                <dt><span>Tẩm Bột Chiên Giòn</span></dt>
+                <dd><img src="images/featured-cagory10.jpg" /><div class="detail">Chi tiết</div></dd>
+            </dl>
+            <dl>
+                <dt><span>Rau</span></dt>
+                <dd><img src="images/featured-cagory11.jpg" /><div class="detail">Chi tiết</div></dd>
+            </dl>
+            <dl>
+                <dt><span>Món Khai Vị</span></dt>
+                <dd><img src="images/featured-cagory12.jpg" /><div class="detail">Chi tiết</div></dd>
+            </dl>
+            <dl>
+                <dt><span>Nướng Muối</span></dt>
+                <dd><img src="images/featured-cagory13.jpg" /><div class="detail">Chi tiết</div></dd>
+            </dl>
+        </div>
+    </div>	
+</article>
+<footer>
+	<p class="footer"><a href="http://sothichweb.com/">www.sothichweb.com</a></p>
+</footer>
+</body>
+</html>

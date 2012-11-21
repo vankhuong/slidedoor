@@ -1,0 +1,90 @@
+.vk-slidedoor{
+    position: relative;
+    overflow: hidden;
+    margin: 50px auto;
+    /*width: 768px;*/
+    height: 188px;
+    font-family: "Kozuka Mincho Pr6N EL", Meiryo, "MS PMincho", "MS Gothich", "Arial";
+	color: #fff;
+}
+.vk-slidedoor .slidedoor-wrap{
+    position: relative;
+}
+.vk-slidedoor dl{
+    position: absolute;
+    margin: 0; 
+    height: 188px;
+}
+.vk-slidedoor dt{
+    float: left;
+    width: 20px;
+    padding: 8px 4px;
+    margin: 0;
+    height: 172px;
+    text-align: center;
+    word-wrap: break-word;
+    background: #323232;
+    font-size: 12px;
+    line-height: 12px;
+    border-radius: 4px 0 0 4px;
+    -webkit-border-radius: 4px 0 0 4px;
+}
+.en-US dt, .vi dt{
+    position: relative;
+}
+.en-US dt span, .vi dt span{
+    position: absolute;
+    left: -80px;
+    bottom: 80px;
+    display: block;
+    text-align: center;
+    width: 188px;
+    height: 28px;
+    line-height: 28px;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+.vk-slidedoor dt:hover{
+    background: #510002;
+    cursor: pointer;
+}
+.vk-slidedoor .current dt{
+    background: #990005;
+}
+.vk-slidedoor dd{
+    margin: 0;
+    float: left;
+    width: 392px;
+    height: 188px;
+    position: relative;
+    padding-left: 1px;
+    background: #000;
+}
+.vk-slidedoor dd img{
+    width: 100%;
+    height: 100%;
+    border-radius: 6px 0 0 6px;
+    -webkit-border-radius: 6px 0 0 6px;
+    margin: 0; padding: 0;
+}
+.vk-slidedoor .detail{
+    position: absolute;
+    bottom: 6px;
+    right: 6px;
+    width: 111px; height:  26px;
+    line-height: 23px;
+    text-align: center;
+    
+    background: rgba(153,0,5,0.8);
+    border-radius: 3px;
+    border-radius: 3px;
+    -moz-box-shadow: inset 1px 1px 2px rgba(255,255,255,0.6);
+    -webkit-box-shadow: inset 1px 1px 2px rgba(255,255,255,0.6);
+}
+.vk-slidedoor .detail:hover{
+    cursor: pointer;
+    background: rgba(153,0,5,0.9);
+}
