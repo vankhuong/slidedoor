@@ -1,0 +1,41 @@
+*{margin:0; padding: 0;}
+body{
+	color: #2D2D2D;
+	font: normal 80%/150% Georgia, "Times New Roman", Times, serif;
+}
+a{color: #000;}
+ul li{list-style: none;}
+header, article, footer{
+	margin: 0 auto;
+	display: block;
+	clear: both;
+	width: 800px;
+}
+h1 {
+	font: normal 320%/100% Georgia, "Times New Roman", Times, serif;
+	margin: 20px 0 5px 0;
+	letter-spacing: -2px;
+}
+.credits {
+	border-bottom: solid 1px #ccc;
+	padding-bottom: 5px;
+	margin: 10px 0 30px 10px;
+	font: 120% Garamond, Georgia, serif;
+}
+.credits em {color: #999;}
+.credits a {
+	color: #666;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 1px;
+}
+.credits a:hover{color: #000;}
+
+.footer {
+	padding: 10px 0 30px;
+	margin-top: 30px;
+	border-top: solid 1px #ccc;
+	text-align: center;
+}
+.footer a {color: #999;}
+.footer a:hover {color: #000;}

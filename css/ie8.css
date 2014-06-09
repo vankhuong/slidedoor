@@ -1,0 +1,11 @@
+
+/* fix text rotation for IE version <=8 */
+.en-US dt span, .vi dt span{
+    left: 0;
+    bottom: 160px;
+    font-family: arial;
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+.vk-slidedoor .detail{
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=1, StartColorStr='#99f00006', EndColorStr='#99f00006');
+}

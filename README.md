@@ -1,5 +1,5 @@
 
- * jQuery vkSlidedoor 1.0
+ * jQuery vkSlidedoor 1.1
  
  * Copyright 2012-2014, Van Khuong (www.sothichweb.com)
  * Licensed under the MIT

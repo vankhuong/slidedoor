@@ -1,55 +1,41 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" />
-<html xmlns="http://www.w3.org/1999/xhtml" />
+<!DOCTYPE html>
 <html>
  <head>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
   <meta name="Author" content="Van Khuong" />
   <title>Demo | Xây dựng plugin slide-door với jQuery</title>
-  <link rel="stylesheet" type="text/css" href="../styles.css" />
-  <link href="vk-slidedoor.css" rel="stylesheet" type="text/css"/>
-  <script type="text/javascript" src="../html5.js"></script>
-  <script type="text/javascript" src="jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="reset.css" />
+  <link rel="stylesheet" type="text/css" href="vk-slidedoor.css" />
+  
+  <script type="text/javascript" src="jquery-1.8.2.min.js"></script>
   <script type="text/javascript" src="jquery.easing.1.3.js"></script>
   <script type="text/javascript" src="vk-slidedoor.js"></script>
+     
     <!--[if IE 9]>
-        <link rel="stylesheet" type="text/css" href="ie9.css" />
+        <link rel="stylesheet" type="text/css" href="CSS/ie9.css" />
     <![endif]-->
     <!--[if lt IE 9]>
-        <link rel="stylesheet" type="text/css" href="ie8.css" />
+        <link rel="stylesheet" type="text/css" href="CSS/ie8.css" />
+        <script type="text/javascript" src="html5.js"></script>
     <![endif]-->
     <!--[if lt IE 8]>
-        <link rel="stylesheet" type="text/css" href="ie7.css" />
+        <link rel="stylesheet" type="text/css" href="CSS/ie7.css" />
     <![endif]-->
-<script type="text/javascript">
-	//Google Analytics
-	  var _gaq = _gaq || [];
-	  _gaq.push(['_setAccount', 'UA-30316415-1']);
-	  _gaq.push(['_trackPageview']);
+     
+    <style type="text/css">
+        body{background: url('images/bg.jpg')}
+        .credits a:hover, .footer a:hover{color: #fff;}
+        .footer, .credits{border: none;}
+        h1{color: #999;}
+    </style>
 
-	  (function() {
-		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	  })();
-</script>
-<style type="text/css">
-	body{background: url('../images/bg.jpg')}
-	.credits a:hover, .footer a:hover{color: #fff;}
-	.footer, .credits{border: none;}
-	h1{color: #999;}
-</style>
-
-<script type="text/javascript">
-$(document).ready(function(){
-    /**
-    * Do not remove this if you are using
-    * jQuery vkSlidedoor
-    * Author: Van Khuong
-    * http://sothichweb.com
-    */
-    $('.vk-slidedoor').vkSlidedoor({autoplay : true, direction : 'ltr', looptimeout : 5000});
-});
-</script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.vk-slidedoor.jp').vkSlidedoor({autoplay : true, direction : 'ltr', looptimeout : 5000});
+            $('.vk-slidedoor.en-US').vkSlidedoor({autoplay : true, direction : 'rtl', looptimeout : 6000});
+            $('.vk-slidedoor.vi').vkSlidedoor({autoplay : true, direction : 'ltr', looptimeout : 7000});
+        });
+    </script>
  </head>
 <body>
 <header>
@@ -57,7 +43,7 @@ $(document).ready(function(){
 	<p class="credits"><em>by:</em> <a href="http://www.sothichweb.com/">sothichweb.com</a></p>
 </header>
 <article>
-<div class="vk-slidedoor" id="vk1">
+<div class="vk-slidedoor jp">
         <div class="slidedoor-wrap">
             <dl>
                 <dt>弁当＆セット</dt>
@@ -229,7 +215,7 @@ $(document).ready(function(){
     </div>	
 </article>
 <footer>
-	<p class="footer"><a href="http://sothichweb.com/">www.sothichweb.com</a></p>
+	<p class="footer"><a href="http://sothichweb.com/article/xay-dung-plugin-slide-door-voi-jquery/d967abd">www.sothichweb.com</a></p>
 </footer>
 </body>
 </html>
